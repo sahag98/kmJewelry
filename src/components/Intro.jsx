@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {MenuIcon,XIcon} from '@heroicons/react/outline'
+import {Link} from "react-scroll";
 
 export default function Intro() {
   return (
@@ -40,15 +41,15 @@ export default function Intro() {
                 </>
               )}
             </Popover>
-            <a href="#" spy={true} smooth={true} offset={-200} className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Home
             </a>
             <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               About Us
             </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="services" spy={true} smooth={true} offset={-200}className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Services
-            </a>
+            </Link>
             <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Library
             </a>
