@@ -11,8 +11,8 @@ export default function Intro() {
             <a href="services">
               <span className="sr-only">Workflow</span>
               <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                className="h-20 w-auto"
+                src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/km-removebg-preview.png?v=1652828527134"
                 alt=""
               />
             </a>
@@ -96,14 +96,14 @@ export default function Intro() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className=" z-999 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <Popover.Panel focus className=" z-10 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    className="h-20 w-auto"
+                    src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/km-removebg-preview.png?v=1652828527134"
                     alt="Workflow"
                   />
                 </div>

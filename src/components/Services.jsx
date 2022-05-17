@@ -1,29 +1,31 @@
 import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
-
+import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
+import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
+import { data } from './data';
 const features = [
   {
     name: 'Competitive exchange rates',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
+    icon: DiamondOutlinedIcon,
   },
   {
     name: 'No hidden fees',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
+    icon: ConstructionOutlinedIcon,
   },
   {
     name: 'Transfers are instant',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
+    icon: DiamondOutlinedIcon,
   },
   {
     name: 'Mobile notifications',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: AnnotationIcon,
+    icon: DiamondOutlinedIcon,
   },
 ]
 
@@ -32,7 +34,7 @@ export default function Example() {
     <div className="py-12 bg-slate-100" id='#services'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
+          <h2 className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             A better way to send money
           </p>
