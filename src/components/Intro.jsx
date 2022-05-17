@@ -1,15 +1,14 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {MenuIcon,XIcon} from '@heroicons/react/outline'
-import {Link} from "react-scroll";
-
+import {Link} from 'react-scroll';
 export default function Intro() {
   return (
     <Popover className="relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <a href="services">
               <span className="sr-only">Workflow</span>
               <img
                 className="h-8 w-auto sm:h-10"
@@ -41,18 +40,19 @@ export default function Intro() {
                 </>
               )}
             </Popover>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            
+            <Link to="services" spy={true} smooth={true} offset={-200} className="no-underline ... cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Home
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            </Link>
+            <Link to="services" spy={true} smooth={true} offset={-200} className="no-underline ... cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               About Us
-            </a>
-            <Link to="services" spy={true} smooth={true} offset={-200}className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+            </Link>
+            <Link to="services" spy={true} smooth={true} offset={-200} className="no-underline ... cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Services
             </Link>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link  to="services" spy={true} smooth={true} offset={-200} className="no-underline text-base font-medium text-gray-500 hover:text-gray-900">
               Library
-            </a>
+            </Link>
             <Popover className="relative">
               {({ open }) => (
                 <>  
@@ -71,7 +71,7 @@ export default function Intro() {
                         <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
                         
                           <div className="mt-5 text-sm">
-                            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            <a href="services" className="font-medium text-indigo-600 hover:text-indigo-500">
                               {' '}
                               View all posts <span aria-hidden="true">&rarr;</span>
                             </a>
@@ -97,7 +97,7 @@ export default function Intro() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <Popover.Panel focus className="z-10 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
@@ -122,19 +122,18 @@ export default function Intro() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Home
-                </a>
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  About Us
-                </a>
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Services
-                </a>
-
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Library
-                </a>
+              <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+              Services
+            </Link>
+            <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+              Services
+            </Link>
+            <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+              Services
+            </Link>
+            <Link to="services" spy={true} smooth={true} offset={-200} className="text-base font-medium text-gray-500 hover:text-gray-900">
+              Library
+            </Link>
         
               </div>
              
