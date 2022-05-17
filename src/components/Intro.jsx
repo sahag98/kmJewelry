@@ -40,18 +40,17 @@ export default function Intro() {
                 </>
               )}
             </Popover>
-            
-            <Link to="services" spy={true} smooth={true} offset={-200} className="no-underline ... cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="Home" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Home
             </Link>
-            <Link to="services" spy={true} smooth={true} offset={-200} className="no-underline ... cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               About Us
             </Link>
-            <Link to="services" spy={true} smooth={true} offset={-200} className="no-underline ... cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Services
             </Link>
-            <Link  to="services" spy={true} smooth={true} offset={-200} className="no-underline text-base font-medium text-gray-500 hover:text-gray-900">
-              Library
+            <Link to="Contact" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+              Contact Us
             </Link>
             <Popover className="relative">
               {({ open }) => (
@@ -97,7 +96,7 @@ export default function Intro() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="z-10 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <Popover.Panel focus className=" z-999 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
@@ -122,21 +121,19 @@ export default function Intro() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-              <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
-              Services
-            </Link>
-            <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
-              Services
-            </Link>
-            <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
-              Services
-            </Link>
-            <Link to="services" spy={true} smooth={true} offset={-200} className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Library
-            </Link>
-        
+              <Link to="Home" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700">
+                  Home
+                </Link>
+                <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700">
+                  About Us
+                </Link>
+                <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
+                Services
+              </Link>
+                <Link to="Contact" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700">
+                  Contact Us
+                </Link>
               </div>
-             
             </div>
           </div>
         </Popover.Panel>

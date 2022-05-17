@@ -29,7 +29,7 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="py-12 bg-white" id='#services'>
+    <div className="py-12 bg-slate-100" id='#services'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
