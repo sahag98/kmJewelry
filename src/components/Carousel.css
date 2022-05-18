@@ -1,18 +1,111 @@
-.d-block{
-  background-color:transparent;
-  
-  height: 80vh;
-  padding: 20px;
-  width: 100%;    
+.brandslide img {
+  width: 90vw;
+  height: 90vh;
+  border-radius:5%;
+  margin: 0 auto;
 }
 
+.brandslide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.brandactiveSlide {
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: transparent;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #4f46e5;
+}
+
+.next {
+  color: black;
+  border: black solid 1px;
+  border-radius: 50%;
+  margin-right: 15px;
+  padding: 5px;
+    font-size: 2rem;
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  color: black;
+  border: black solid 1px;
+  border-radius: 50%;
+  margin-left: 15px;
+  padding: 5px;
+    font-size: 2rem;
+  left: 0%;
+  top: 50%;
+}
 @media screen and (max-width: 960px){
-
-  .d-block{
-      background-color: transparent;
-      height:  40vh;
-      
-      padding: 15px;
+ 
+  
+  .brandslide img { 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 110%;
+    border-radius: 15%;
+    margin-top: 20px;
+    width: 85%;
+    
   }
+  
+  .brandslide {
+    transform: scale(0.2);
+    transition: transform 300ms;
+    opacity: 0.5;
+  }
+  
+  .brandactiveSlide {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  .arrow {
 
+    background-color: transparent;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow svg {
+    transition: color 300ms;
+  }
+  
+  .arrow svg:hover {
+    color: #4f46e5;
+  }
+  
+  .next {
+    border: none;
+    color: white;
+    font-size: 2rem;
+    right: 0%;
+    top: 40%;
+  }
+  
+  .prev {
+    border: none;
+    color: white;
+    font-size: 2rem;
+    left: 0%;
+    top: 40%;
+  }
 }
