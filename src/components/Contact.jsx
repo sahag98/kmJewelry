@@ -92,7 +92,7 @@ const Contact = () => {
                     <button type="submit" className="
                             w-full
                             text-white
-                            bg-indigo-600
+                            bg-indigo-700
                             rounded
                             border bg-zinc-700
                             p-3
