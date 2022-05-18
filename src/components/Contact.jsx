@@ -1,11 +1,85 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import validator from 'validator';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import * as emailjs from 'emailjs-com';
+
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const Contact = () => {
+
+  // const validateEmail = (e) => {
+  //   var email = e.target.value
+  
+  //   if (validator.isEmail(email)) {
+  //     setEmailError('Valid Email :)')
+  //   } else {
+  //     setEmailError('Enter valid Email!')
+  //   }
+  // }
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const formRef = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+ 
+
+  const handleSubmit = (e) => {
+    console.log(e)
+    e.preventDefault();
+    setName('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+
+    if (validator.isEmail(email)) {
+      console.log("Email")
+    } else {
+      console.log("not email");
+    }
+    emailjs
+      .sendForm(
+        'service_vviq8ml',
+        'template_qyxugqe',
+        formRef.current,
+        'user_d2qZiInk63cNZqWX4wPoS'
+      )
+      .then((result) => {
+        console.log(result.text);
+        handleClick();
+      },
+        (error) => {
+          console.log(error.text);
+        });
+
+
+
+      }
   return (
-      <>
-    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-    
-    <section className="bg-zinc-200 py-20 lg:py-[120px] overflow-hidden relative z-10">
+    <>
+      <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+
+      <section className="bg-zinc-200 py-20 lg:py-[120px] overflow-hidden relative z-10 scroll-smooth">
         <div className="container">
           <div className="flex flex-wrap lg:justify-between -mx-4">
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
@@ -34,9 +108,9 @@ const Contact = () => {
             </div>
             <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-                <form>
+                <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-6">
-                    <input type="text" placeholder="Your Name" className="
+                    <input onChange={e=>setName(e.target.value)} value={name} type="text" placeholder="Your Name" className="
                             w-full
                             rounded
                             py-3
@@ -46,10 +120,10 @@ const Contact = () => {
                             outline-none
                             focus-visible:shadow-none
                             focus:border-primary
-                            " required />
+                            " required name='user_name' />
                   </div>
                   <div className="mb-6">
-                    <input type="email" placeholder="Your Email" className="
+                    <input onChange={e=>setEmail(e.target.value)} value={email}type="email" placeholder="Your Email" className="
                             w-full
                             rounded
                             py-3
@@ -59,10 +133,10 @@ const Contact = () => {
                             outline-none
                             focus-visible:shadow-none
                             focus:border-primary
-                            " required />
+                            " required name='user_email' />
                   </div>
                   <div className="mb-6">
-                    <input type="text" placeholder="Your Phone" className="
+                    <input onChange={e=>setPhone(e.target.value)} value={phone}type="text" placeholder="Your Phone" className="
                             w-full
                             rounded
                             py-3
@@ -72,10 +146,10 @@ const Contact = () => {
                             outline-none
                             focus-visible:shadow-none
                             focus:border-primary
-                            " required />
+                            " required name='user_phone' />
                   </div>
                   <div className="mb-6">
-                    <textarea rows={6} placeholder="Your Message" className="
+                    <textarea onChange={e=>setMessage(e.target.value)} value={message} rows={6} placeholder="Your Message" className="
                             w-full
                             rounded
                             py-3
@@ -86,13 +160,14 @@ const Contact = () => {
                             outline-none
                             focus-visible:shadow-none
                             focus:border-primary
-                            " required defaultValue={""} />
+                            " required name='message' />
                   </div>
                   <div>
-                    <button type="submit" className="
+                    <Stack spacing={2} sx={{ width: '100%' }}>
+                    <button  type="submit" className="
                             w-full
                             text-white
-                            bg-indigo-700
+                            bg-primary
                             rounded
                             border bg-zinc-700
                             p-3
@@ -101,6 +176,13 @@ const Contact = () => {
                             " required>
                       Send Message
                     </button>
+                    <Snackbar  open={open} autoHideDuration={6000} onClose={handleClose}>
+                      <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+                        Your email has been sent!
+                      </Alert>
+                    </Snackbar>
+                    
+                    </Stack>
                   </div>
                 </form>
                 <div>
@@ -234,5 +316,4 @@ const Contact = () => {
     </>
   )
 }
-
 export default Contact

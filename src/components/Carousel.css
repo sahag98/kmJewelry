@@ -1,6 +1,6 @@
 .brandslide img {
-  width: 90vw;
-  height: 90vh;
+  width: 78vw;
+  height: 78vh;
   border-radius:5%;
   margin: 0 auto;
 }
@@ -39,7 +39,7 @@
   margin-right: 15px;
   padding: 5px;
     font-size: 2rem;
-  right: 0%;
+  right: 5%;
   top: 50%;
 }
 
@@ -50,25 +50,31 @@
   margin-left: 15px;
   padding: 5px;
     font-size: 2rem;
-  left: 0%;
+  left: 5%;
   top: 50%;
 }
 @media screen and (max-width: 960px){
  
-  
+  /* .brandactiveSlide {
+
+    height: 110%;
+  } */
+
+
   .brandslide img { 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 110%;
     border-radius: 15%;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 85%;
-    
   }
   
   .brandslide {
     transform: scale(0.2);
     transition: transform 300ms;
     opacity: 0.5;
+    /* height: 80vh; */
   }
   
   .brandactiveSlide {

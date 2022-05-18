@@ -39,11 +39,11 @@ function App() {
   };
 
   return (
-    <div className="brands">
+    <div className="brands scroll-smooth">
       <Slider {...settings}>
         {SliderData.map((img, idx) => (
           <div className={idx === imageIndex ? "brandslide brandactiveSlide" : "brandslide"}>
-            <img src={img.image} alt="/" />
+            <img src={img.image} alt="/" className="big" />
             
           </div>
         ))}

@@ -1,28 +1,33 @@
 import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
 import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
+import FlareOutlinedIcon from '@mui/icons-material/FlareOutlined';
+import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
 import { data } from './data';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const features = [
   {
-    name: 'Competitive exchange rates',
+    name: 'Custom Designing',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: DiamondOutlinedIcon,
+    icon: BorderColorOutlinedIcon,
   },
   {
-    name: 'No hidden fees',
+    name: 'Maintenance & Repair',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ConstructionOutlinedIcon,
   },
   {
-    name: 'Transfers are instant',
+    name: 'Polishing & Shining',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: DiamondOutlinedIcon,
+    icon: FlareOutlinedIcon,
   },
   {
-    name: 'Mobile notifications',
+    name: 'Precious Gems Setting',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: DiamondOutlinedIcon,
@@ -30,8 +35,14 @@ const features = [
 ]
 
 export default function Example() {
+
+  useEffect(() => {
+    AOS.init({duration: 3000});
+  }, []);
+
   return (
-    <div className="py-12 bg-slate-100" id='#services'>
+    
+    <div className="py-12 bg-slate-100" id='#services' >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
@@ -44,7 +55,7 @@ export default function Example() {
           </p>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10" >
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {features.map((feature) => (
               <div key={feature.name} className="relative">

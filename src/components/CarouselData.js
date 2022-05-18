@@ -7,12 +7,19 @@ export const SliderData = [
     {
       id:2,
       image:
-      'https://i.ebayimg.com/thumbs/images/g/g8gAAOSwPjpiF62T/s-l1200.jpg'    
+      'https://cdn.discordapp.com/attachments/420365346390671371/976585917257117786/pexels-photo-3641059_1.jpeg'    
     },
     
     {
       id:3,
       image:
-        'https://images.pexels.com/photos/1457801/pexels-photo-1457801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        'https://cdn.discordapp.com/attachments/420365346390671371/976586457152122971/pexels-photo-8398842_1.jpeg'
+    },
+    {
+      id:4,
+      image:
+        'https://cdn.discordapp.com/attachments/420365346390671371/976579403305848883/pexels-photo-1457801.jpeg'
     }
   ];
+
+ 
