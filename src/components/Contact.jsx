@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="flex flex-wrap lg:justify-between -mx-4">
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0">
-                <span className="block mb-4 text-base text-primary font-semibold text-4xl">
+                <span className="block mb-4 text-indigo-600 font-semibold text-4xl">
                   CONTACT US
                 </span>
                 <h2 className="
@@ -92,7 +92,7 @@ const Contact = () => {
                     <button type="submit" className="
                             w-full
                             text-white
-                            bg-zinc-700
+                            bg-indigo-600
                             rounded
                             border bg-zinc-700
                             p-3
@@ -106,7 +106,7 @@ const Contact = () => {
                 <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg width={100} height={100} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z" fill="black" />
+                      <path fillRule="evenodd" clipRule="evenodd" d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z" fill="#3056D3" />
                     </svg>
                   </span>
                   <span className="absolute -right-10 top-[90px] z-[-1]">

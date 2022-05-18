@@ -1,6 +1,5 @@
 import React from 'react'
 
-const Images = ["dsadhdsa", "dsad"]
 const About = () => {
   return (
     <div class="py-16 bg-white">  
@@ -8,7 +7,7 @@ const About = () => {
       <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
         <div class="md:5/12 lg:w-5/12">
            
-          <img src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png" alt="image" loading="lazy" width="" height="" />
+          <img src="https://www.unh.edu/unhtoday/sites/default/files/styles/article_huge/public/article/2019/professional_woman_headshot.jpg?itok=3itzxHXh" alt="image" loading="lazy" width="" height="" />
         </div>
         <div class="md:7/12 lg:w-6/12">
         <h2 className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">About Us</h2>
