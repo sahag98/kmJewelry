@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Gallery from './components/Gallery';
 
 
 
@@ -30,6 +31,9 @@ function App() {
       </div>
       <div className='' data-aos="zoom-in" >
         <Services />
+      </div>
+      <div className='' data-aos="zoom-in" >
+        <Gallery />
       </div>
       <div className="" data-aos="zoom-in" >
         <Contact />
