@@ -25,13 +25,13 @@ function App() {
         <Intro />
       </div>
       <Carousel />
-      <div className="About" data-aos="fade-zoom-in" >
+      <div className="" data-aos="fade-zoom-in" >
         <About />
       </div>
-      <div className='services' data-aos="fade-zoom-out" >
+      <div className='' data-aos="fade-zoom-out" >
         <Services />
       </div>
-      <div className="Contact" data-aos="fade-zoom-in" >
+      <div className="" data-aos="fade-zoom-in" >
         <Contact />
       </div>   
       <Footer />

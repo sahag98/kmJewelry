@@ -46,7 +46,7 @@ export default function Intro() {
             <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
               About Us
             </Link>
-            <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
+            <Link to="Services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
               Services
             </Link>
             <Link to="Contact" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
@@ -127,7 +127,7 @@ export default function Intro() {
                 <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
                   About Us
                 </Link>
-                <Link to="services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
+                <Link to="Services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
                 Services
               </Link>
                 <Link to="Contact" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">

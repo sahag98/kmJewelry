@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div class="py-16 bg-white scroll-smooth">
+    <div name="About" class="py-16 bg-white scroll-smooth">
       <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
         <div class="md:7/12 lg:w-6/12">
