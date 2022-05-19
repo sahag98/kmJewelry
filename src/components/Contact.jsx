@@ -79,10 +79,10 @@ const Contact = () => {
     <>
       <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
 
-      <section  className="bg-zinc-200 py-20 lg:py-[120px] overflow-hidden relative z-10 scroll-smooth">
+      <section  className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 scroll-smooth">
         <div className="container">
           <div className="flex flex-wrap lg:justify-between -mx-4">
-            <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
+            <div  name="Contact" className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0">
                 <span className="block mb-4 text-indigo-600 font-semibold text-4xl">
                   CONTACT US
@@ -99,14 +99,14 @@ const Contact = () => {
                       ">
                   GET IN TOUCH WITH US
                 </h2>
-                <p name="Contact" className="text-base text-body-color leading-relaxed mb-9">
+                <p className="text-base text-body-color leading-relaxed mb-9">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
                   adiqua minim veniam quis nostrud exercitation ullamco
                 </p>
               </div>
             </div>
-            <div  className="w-full lg:w-1/2 xl:w-5/12 px-4">
+            <div   className="w-full lg:w-1/2 xl:w-5/12 px-4">
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-6">

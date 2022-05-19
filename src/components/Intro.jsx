@@ -40,8 +40,8 @@ export default function Intro() {
                 </>
               )}
             </Popover>
-            <Link to="Home" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
-              Home
+            <Link to="Gallery" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
+              Gallery
             </Link>
             <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
               About Us

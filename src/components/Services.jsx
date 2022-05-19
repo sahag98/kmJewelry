@@ -44,12 +44,12 @@ export default function Example() {
     
     <div className="py-12 bg-slate-100"  >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
+        <div  className="lg:text-center">
+          <h2 name="Services" className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             A better way to send money
           </p>
-          <p name="Services" className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p  className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
             accusamus quisquam.
           </p>
