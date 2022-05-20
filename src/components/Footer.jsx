@@ -56,6 +56,7 @@ const Footer = () => {
       <div className="text-center lg:text-left p-6 bg-slate-100 border-t border-gray-200">
         <span>© 2022 Copyright:</span>
         <a className="text-gray-600 font-semibold" href="km">KM Jewelry</a>
+        <h1 className='hidden'>Devs : Sahag Arzoumanian <br/> Shant Arabaghian</h1>
       </div>
     </footer>
   )
