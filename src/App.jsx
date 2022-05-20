@@ -10,9 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Gallery from './components/Gallery';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import {Link} from 'react-scroll';
-
+import {ScrollToTop} from './components/ScrollToTop';
 function App() {
 
   useEffect(() => {
@@ -37,10 +35,10 @@ function App() {
       <div className="" data-aos="zoom-in" >
         <Contact />
       </div>
-      <Link to ="home"spy={true} smooth={true} offset={-200}>
-      <ArrowUpwardIcon fontSize="large" className='animate-bounce hover:fill-indigo-500 cursor-pointer'/>
-      </Link>
-      <Footer />
+      <Footer /> 
+      <div className='bg-slate-100'>
+   <ScrollToTop/>
+      </div>
     </div>
   );
 }
