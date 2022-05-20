@@ -1,12 +1,12 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import {MenuIcon,XIcon} from '@heroicons/react/outline'
-import {Link} from 'react-scroll';
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Link } from 'react-scroll';
 export default function Intro() {
   return (
     <Popover className="relative bg-white " >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+        <div name="home" className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="services">
               <span className="sr-only">Workflow</span>
@@ -35,7 +35,7 @@ export default function Intro() {
                     leave="transition ease-in duration-150"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
-                  >   
+                  >
                   </Transition>
                 </>
               )}
@@ -54,7 +54,7 @@ export default function Intro() {
             </Link>
             <Popover className="relative">
               {({ open }) => (
-                <>  
+                <>
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-200"
@@ -66,9 +66,9 @@ export default function Intro() {
                   >
                     <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                  
+
                         <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
-                        
+
                           <div className="mt-5 text-sm">
                             <a href="services" className="font-medium text-indigo-600 hover:text-indigo-500">
                               {' '}
@@ -83,7 +83,7 @@ export default function Intro() {
               )}
             </Popover>
           </Popover.Group>
-          
+
         </div>
       </div>
 
@@ -121,15 +121,15 @@ export default function Intro() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-              <Link to="Home" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
-                  Home
+                <Link to="Gallery" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
+                  Gallery
                 </Link>
                 <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
                   About Us
                 </Link>
                 <Link to="Services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 no-underline">
-                Services
-              </Link>
+                  Services
+                </Link>
                 <Link to="Contact" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
                   Contact Us
                 </Link>

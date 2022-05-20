@@ -1,7 +1,6 @@
 
 import './App.css';
 import Intro from './components/Intro';
-import Header from './components/header';
 import Services from './components/Services';
 import Carousel from './components/Carousel';
 import About from './components/About';
@@ -11,8 +10,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Gallery from './components/Gallery';
-
-
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import {Link} from 'react-scroll';
 
 function App() {
 
@@ -37,7 +36,10 @@ function App() {
       </div>
       <div className="" data-aos="zoom-in" >
         <Contact />
-      </div>   
+      </div>
+      <Link to ="home"spy={true} smooth={true} offset={-200}>
+      <ArrowUpwardIcon fontSize="large" className='animate-bounce hover:fill-indigo-500 cursor-pointer'/>
+      </Link>
       <Footer />
     </div>
   );

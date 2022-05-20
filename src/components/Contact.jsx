@@ -2,10 +2,8 @@ import React, { useRef, useState } from 'react'
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
-import validator from 'validator';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import * as emailjs from 'emailjs-com';
+
 
 
 const Alert = React.forwardRef(function Alert(props, ref) {
@@ -13,16 +11,6 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 const Contact = () => {
-
-  // const validateEmail = (e) => {
-  //   var email = e.target.value
-  
-  //   if (validator.isEmail(email)) {
-  //     setEmailError('Valid Email :)')
-  //   } else {
-  //     setEmailError('Enter valid Email!')
-  //   }
-  // }
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -52,11 +40,6 @@ const Contact = () => {
     setPhone('');
     setMessage('');
 
-    if (validator.isEmail(email)) {
-      console.log("Email")
-    } else {
-      console.log("not email");
-    }
     emailjs
       .sendForm(
         'service_vviq8ml',
@@ -185,7 +168,9 @@ const Contact = () => {
                     </Stack>
                   </div>
                 </form>
+                
                 <div>
+                
                   <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg width={100} height={100} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z" fill="#3056D3" />
@@ -312,6 +297,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        
       </section>
     </>
   )
