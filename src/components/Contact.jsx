@@ -30,7 +30,14 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
- 
+
+  const char = '<';
+
+
+
+  if (name.includes(char) || email.includes(char) || phone.includes(char) || message.includes(char)) {
+    window.location.reload()
+  }
 
   const handleSubmit = (e) => {
     console.log(e)
@@ -40,37 +47,44 @@ const Contact = () => {
     setPhone('');
     setMessage('');
 
-    emailjs
-      .sendForm(
-        'service_vviq8ml',
-        'template_qyxugqe',
-        formRef.current,
-        'user_d2qZiInk63cNZqWX4wPoS'
-      )
-      .then((result) => {
-        console.log(result.text);
-        handleClick();
-      },
-        (error) => {
-          console.log(error.text);
-        });
+    
 
+    if (!name.includes(char) && !email.includes(char) && !phone.includes(char) && !message.includes(char)) {
 
+      emailjs
+        .sendForm(
+          'service_vviq8ml',
+          'template_qyxugqe',
+          formRef.current,
+          'user_d2qZiInk63cNZqWX4wPoS'
+        )
+        .then((result) => {
+          console.log(result.text);
+          handleClick();
+        },
+          (error) => {
+            console.log(error.text);
+          });
 
-      }
+    }
+    else {
+      window.location.reload()
+    }
+  }
+
   return (
     <>
       <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
 
-      <section  className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 scroll-smooth">
+      <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 scroll-smooth">
         <div className="container">
           <div className="flex flex-wrap lg:justify-between -mx-4">
-            <div  name="Contact" className="w-full lg:w-1/2 xl:w-6/12 px-4">
+            <div name="Contact" className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0">
                 <span className="block mb-4 text-indigo-600 font-semibold text-4xl">
                   CONTACT US
                 </span>
-                <h2  className="
+                <h2 className="
                       text-dark
                       mb-6
                       uppercase
@@ -89,11 +103,11 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div   className="w-full lg:w-1/2 xl:w-5/12 px-4">
+            <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-6">
-                    <input onChange={e=>setName(e.target.value)} value={name} type="text" placeholder="Your Name" className="
+                    <input onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Your Name" className="
                             w-full
                             rounded
                             py-3
@@ -106,7 +120,7 @@ const Contact = () => {
                             " required name='user_name' />
                   </div>
                   <div className="mb-6">
-                    <input onChange={e=>setEmail(e.target.value)} value={email}type="email" placeholder="Your Email" className="
+                    <input onChange={e => setEmail(e.target.value)} value={email} type="email" placeholder="Your Email" className="
                             w-full
                             rounded
                             py-3
@@ -119,7 +133,7 @@ const Contact = () => {
                             " required name='user_email' />
                   </div>
                   <div className="mb-6">
-                    <input onChange={e=>setPhone(e.target.value)} value={phone}type="text" placeholder="Your Phone" className="
+                    <input onChange={e => setPhone(e.target.value)} value={phone} type="text" placeholder="Your Phone" className="
                             w-full
                             rounded
                             py-3
@@ -132,7 +146,7 @@ const Contact = () => {
                             " required name='user_phone' />
                   </div>
                   <div className="mb-6">
-                    <textarea onChange={e=>setMessage(e.target.value)} value={message} rows={6} placeholder="Your Message" className="
+                    <textarea onChange={e => setMessage(e.target.value)} value={message} rows={6} placeholder="Your Message" className="
                             w-full
                             rounded
                             py-3
@@ -147,7 +161,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <Stack spacing={2} sx={{ width: '100%' }}>
-                    <button  type="submit" className="
+                      <button type="submit" className="
                             w-full
                             text-white
                             bg-primary
@@ -157,20 +171,20 @@ const Contact = () => {
                             transition
                             hover:bg-indigo-800
                             " required>
-                      Send Message
-                    </button>
-                    <Snackbar  open={open} autoHideDuration={6000} onClose={handleClose}>
-                      <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
-                        Your email has been sent!
-                      </Alert>
-                    </Snackbar>
-                    
+                        Send Message
+                      </button>
+                      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                        <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+                          Your email has been sent!
+                        </Alert>
+                      </Snackbar>
+
                     </Stack>
                   </div>
                 </form>
-                
+
                 <div>
-                
+
                   <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg width={100} height={100} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z" fill="#3056D3" />
@@ -297,7 +311,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        
+
       </section>
     </>
   )

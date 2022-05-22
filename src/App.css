@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .App {
   text-align: center;
 }
@@ -32,6 +41,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
