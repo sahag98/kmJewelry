@@ -10,11 +10,11 @@ const Gallery = () => {
     justify-content: center;
     
     @media (max-width: 767px) {
-        height:110vh;
+        height:190vh;
         margin:0;
       }
       @media (width: 280px) {
-        height:310vh;
+        height:430vh;
         margin:0;
       }
   `;
@@ -22,7 +22,7 @@ const Gallery = () => {
     height: 350px;
     width:  350px;
     border-radius: 8%;
-    margin:15px;
+    margin:20px;
      //padding:15px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 1;
@@ -40,6 +40,7 @@ const Gallery = () => {
         width:  200px;
         padding:5px;
         border-radius: 15%;
+        margin-bottom: 10px;
       }
   `;
     const H2 = styled.h2`
@@ -49,37 +50,67 @@ const Gallery = () => {
     const images = [
         {
             id: 1,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project.jpg?v=1653711640953",
 
         },
         {
             id: 2,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project.png?v=1653711696160",
 
-        },
+        }, 
         {
             id: 3,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(9).png?v=1653712438473",
 
         },
         {
             id: 4,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(1).jpg?v=1653713275279",
 
         },
         {
             id: 5,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(2).png?v=1653711810772",
 
         },
         {
             id: 6,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(4).png?v=1653711917433",
 
         },
         {
             id: 7,
-            img: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(5).png?v=1653712000268",
+
+        },
+        {
+            id: 8,
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(6).png?v=1653712185231",
+
+        },
+        {
+            id: 9,
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(7).png?v=1653712305651",
+
+        },
+        {
+            id: 10,
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(8).png?v=1653712375144",
+
+        },
+        {
+            id: 11,
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(1).png?v=1653711765422",
+
+        },
+        {
+            id: 12,
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(10).png?v=1653712475432",
+
+        },
+        {
+            id: 13,
+            img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(11).png?v=1653713445872",
 
         },
 
@@ -88,9 +119,9 @@ const Gallery = () => {
     return (<>
         <H2 name="Gallery" className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase ">GALLERY</H2>
         <Container >
-            {images.map((img, idx) => (
+            {images.map((img) => (
 
-                <Image alt="gallery" className='hover:animate-bounce rounded-xl ' src={img.img} key={img.id} />
+                <Image alt="gallery" load="lazy" className='hover:animate-bounce rounded-xl ' src={img.img} key={img.id} />
             ))}
         </Container>
     </>

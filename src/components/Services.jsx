@@ -1,37 +1,37 @@
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
 import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
 import FlareOutlinedIcon from '@mui/icons-material/FlareOutlined';
-import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
-import { data } from './data';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import React  from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 const features = [
   {
-    name: 'Custom Designing',
+    name: 'Diamond Setting',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: BorderColorOutlinedIcon,
+      'Correctly set diamonds in their places, and ensure each diamond is properly placed.',
+    icon: DiamondOutlinedIcon,
   },
   {
     name: 'Maintenance & Repair',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Restore any kind of defects on jewelry and perform the appropiate fixes.',
     icon: ConstructionOutlinedIcon,
   },
   {
     name: 'Polishing & Shining',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Clean up jewelry with proper tools and make it look brand new.',
     icon: FlareOutlinedIcon,
   },
   {
-    name: 'Precious Gems Setting',
+    name: 'And More!',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: DiamondOutlinedIcon,
+      '',
+    icon: MoreHorizIcon,
   },
+  
 ]
 
 export default function Example() {
@@ -47,11 +47,10 @@ export default function Example() {
         <div  className="lg:text-center">
           <h2 name="Services" className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">Services</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            A better way to send money
+            The best place for your jewelry needs
           </p>
           <p  className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
+            For more information on our services, kindly call our phone number, or reach out to us using the contact form below the gallery!
           </p>
         </div>
 
@@ -63,7 +62,7 @@ export default function Example() {
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                  <p className="ml-16 text-lg leading-6 font-medium font-extrabold text-gray-900">{feature.name}</p>
                 </dt>
                 <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
               </div>

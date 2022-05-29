@@ -6,6 +6,7 @@ import * as emailjs from 'emailjs-com';
 
 
 
+
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
@@ -32,10 +33,11 @@ const Contact = () => {
   const [message, setMessage] = useState('');
 
   const char = '<';
+  const char2 = '>';
 
 
 
-  if (name.includes(char) || email.includes(char) || phone.includes(char) || message.includes(char)) {
+  if (name.includes(char) || name.includes(char2) ||  email.includes(char) || email.includes(char2) || phone.includes(char) || phone.includes(char2) || message.includes(char)|| message.includes(char2)) {
     window.location.reload()
   }
 
@@ -97,9 +99,7 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-base text-body-color leading-relaxed mb-9">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                  adiqua minim veniam quis nostrud exercitation ullamco
+                  One of the most important aspect of our business is effective communication with our clients and the fastest way to contact us is through this form. Feel free to ask us any kind of questions you may have and we will get back to you as soon as possible!
                 </p>
               </div>
             </div>
@@ -107,7 +107,7 @@ const Contact = () => {
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-6">
-                    <input onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Your Name" className="
+                    <input onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Your Full Name" className="
                             w-full
                             rounded
                             py-3
@@ -133,7 +133,7 @@ const Contact = () => {
                             " required name='user_email' />
                   </div>
                   <div className="mb-6">
-                    <input onChange={e => setPhone(e.target.value)} value={phone} type="text" placeholder="Your Phone" className="
+                    <input onChange={e => setPhone(e.target.value)} value={phone} type="text" placeholder="Your Phone Number" className="
                             w-full
                             rounded
                             py-3

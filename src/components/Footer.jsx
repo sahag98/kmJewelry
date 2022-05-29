@@ -13,16 +13,15 @@ const Footer = () => {
           <span>Get connected with us on social networks:</span>
         </div>
         <div className="flex justify-center">
-          <a href="#!" className="mr-2 text-gray-600">
+          <a href="https://www.facebook.com/kevork.arzoumanian" target="_blank"rel="noopener noreferrer" className="mr-2 text-gray-600">
             <FacebookOutlinedIcon className='hover:text-sky-600' />
           </a>
-          <a href="#!" className="mr-2 text-gray-600">
+          <a href="https://www.instagram.com/kmjewelryla/" target="_blank" rel="noopener noreferrer" className="mr-2 text-gray-600">
             <InstagramIcon className='hover:text-fuchsia-400' />
           </a>
           <a href="#!" className="mr-2 text-gray-600">
             <LinkedInIcon className='hover:text-sky-600' />
           </a>
-
         </div>
       </div>
       <div className="mx-6 py-10 text-center md:text-left">
@@ -34,13 +33,13 @@ const Footer = () => {
 
             <p className="flex items-center justify-center md:justify-start mb-4">
               <MapOutlinedIcon className='mr-1 text-blue-500' />
-              <a className='hover:text-sky-500  underline ' href="http://maps.google.com/?q=2213RockroseStreetPalmdale" target="blank">
-                2213 Rockrose Street Palmdale
+              <a className='hover:text-sky-500  underline ' href="http://maps.google.com/?q=550 Sout Hill St Los angeles" target="blank">
+                550 South Hill St, Los Angeles CA
               </a>
             </p>
             <p className="flex items-center justify-center md:justify-start mb-4">
               <EmailOutlinedIcon className='mr-1 text-red-500 ' />
-              karzoumanian@gmail.com
+              km.jewelryla@gmail.com
             </p>
             <p className="flex items-center justify-center md:justify-start mb-4">
               <WhatsAppIcon className='mr-1 text-green-500 ' />

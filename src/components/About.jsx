@@ -7,13 +7,14 @@ const About = () => {
         <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
         <div class="md:7/12 lg:w-6/12">
             <h2 className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase">About Us</h2>
-            <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">Nuxt development is carried out by passionate developers</h2>
-            <p class="mt-6 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-            <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+            <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">KM Jewelry Story and Value</h2>
+            <p class="mt-6 text-gray-600 ">KM Jewelry is owned by Kevork Arzoumanian, an expert and detail-oriented professional at jewelry and diamond setting for over 40 years! Highly Experienced in a combination of American, European and Mediterranean jewelry approach.</p>
+            <p class="mt-4 text-gray-600">Providing services on all kinds of jewerly related products such as rings, bracelets, necklaces, and more!</p>
+            <p class="mt-4 text-gray-600">KM Jewelry is dedicated to provide exceptional customized service to its clients and fullfill their jewelry wishes. </p>
           </div>
-          <div class="md:9/12 lg:w-3/12 rounded-md  ">
+          <div class="md:7/12 lg:w-3/12 rounded-md ">
 
-            <img src="https://www.unh.edu/unhtoday/sites/default/files/styles/article_huge/public/article/2019/professional_woman_headshot.jpg?itok=3itzxHXh" alt="girl" loading="lazy" width="" height="" className='rounded-md md:7/12' />
+            <img src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/aef0997f-0b2c-4922-99cf-30c9097017e8%20(1).jpg?v=1653711407028" alt="girl" loading="lazy" width="" height="" className='rounded-md' />
           </div>
           
         </div>

@@ -1,4 +1,5 @@
 import "./Carousel.css";
+import React  from 'react';
 import { useState } from "react";
 import Slider from "react-slick";
 import { SliderData } from "./CarouselData";

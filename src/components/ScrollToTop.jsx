@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
-import {BiArrowFromBottom,AiOutlineArrowUp,AiOutlineUp,BiChevronsUp,BsChevronDoubleUp} from 'react-icons/bs';
+import React  from 'react';
+import {BsChevronDoubleUp} from 'react-icons/bs';
 
 import { classNames } from "../utils/classNames";
-import ArrowCircleUpOutlinedIcon from '@mui/icons-material/ArrowCircleUpOutlined';
+
 
 export const ScrollToTop = () =>{
 

@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React,{ Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Link } from 'react-scroll';
@@ -11,7 +11,7 @@ export default function Intro() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
               <img
                 className="h-20 w-auto"
-                src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/km-removebg-preview.png?v=1652828527134"
+                src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/Add_a_heading__3_-removebg-preview.png?v=1653865947431"
                 alt=""
               />
           </div>
@@ -71,7 +71,7 @@ export default function Intro() {
                 <div>
                   <img
                     className="h-20 w-auto"
-                    src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/km-removebg-preview.png?v=1652828527134"
+                    src="https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/Add_a_heading__3_-removebg-preview.png?v=1653865947431"
                     alt="Workflow"
                   />
                 </div>
