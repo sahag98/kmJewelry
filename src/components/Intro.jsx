@@ -78,7 +78,7 @@ export default function Intro() {
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 ">
-                    
+                    <span className="sr-only">Close menu</span>
                     <XIcon className="h-9 w-9" aria-hidden="true" />
                   </Popover.Button>
                 </div>
@@ -90,7 +90,7 @@ export default function Intro() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Link to="Gallery" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
+                <Link to="Gallery" spy={true} smooth={true} offset={-200} className="z-20 cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
                   Gallery
                 </Link>
                 <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
