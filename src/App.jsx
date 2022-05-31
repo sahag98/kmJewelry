@@ -29,7 +29,7 @@ function App() {
       <div className="" data-aos="zoom-in" >
         <About />
       </div>
-      <div className='' data-aos="zoom-in" >
+      <div className=''  >
         <Services />
       </div>
       <div className='' data-aos="zoom-in" >
