@@ -89,7 +89,7 @@ export default function Intro() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Link to="Home" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
+                <Link to="Gallery" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">
                   Gallery
                 </Link>
                 <Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-base font-medium text-gray-900 hover:text-gray-700 no-underline">

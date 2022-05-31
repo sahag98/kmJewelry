@@ -1,6 +1,6 @@
 
 import './App.css';
-import React  from 'react';
+import React from 'react';
 import Intro from './components/Intro';
 import Services from './components/Services';
 import Carousel from './components/Carousel';
@@ -11,13 +11,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Gallery from './components/Gallery';
-import {ScrollToTop} from './components/ScrollToTop';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
 
 
   useEffect(() => {
-    AOS.init({duration: 1800});
+    AOS.init({ duration: 1800 });
   }, []);
 
   return (
@@ -38,9 +38,9 @@ function App() {
       <div className="" data-aos="zoom-in" >
         <Contact />
       </div>
-      <Footer /> 
+      <Footer />
       <div className='bg-slate-100'>
-   <ScrollToTop/>
+        <ScrollToTop />
       </div>
     </div>
   );
