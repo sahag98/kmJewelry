@@ -14,23 +14,24 @@ const LinksWrapper = styled.div`
     margin: 0;
     padding: 15px;
     display: flex;
-    height: 20%;
+    height: 24%;
     list-style: none;
     background-color: #fff;
     width: 100%;
     flex-direction: column;
     position: fixed;
-    top: 65px;
+    top: 58px;
     left: 0;
 `;
 
 const LinkItem = styled.li`
   width: 100%;
-  padding: 0.1em 1.1em;
+  padding: 0.13em 1.1em;
   color: #222;
   font-weight: 500;
-  font-size:18px;
+  font-size:19px;
   display: flex;
+  flex-direction: column;
   
 `;
 
