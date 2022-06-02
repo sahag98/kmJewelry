@@ -32,7 +32,7 @@ function App() {
       <div className='' data-aos="zoom-in" >
         <Services />
       </div>
-      <div className='' data-aos="zoom-in" >
+      <div name="Gallery" className='' data-aos="zoom-in" >
         <Gallery />
       </div>
       <div className="" data-aos="zoom-in" >
