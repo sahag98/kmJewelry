@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-scroll';
 
 const NavLinksContainer = styled.div`
     height: 100%;
@@ -31,7 +32,7 @@ const LinkItem = styled.li`
   }
 `;
 
-const Link = styled.a`
+const Links = styled.a`
   text-decoration: none;
   color: inherit;
   font-size: inherit;  
@@ -41,10 +42,20 @@ export default function Navlinks(props) {
     return (
         <NavLinksContainer>
             <LinksWrapper>
-                <LinkItem><Link href="#">About us</Link></LinkItem>
-                <LinkItem><Link href="#">Services</Link></LinkItem>
-                <LinkItem><Link href="#">Gallery</Link></LinkItem>
-                <LinkItem><Link href="#">Contact us</Link></LinkItem>
+                <LinkItem><Links><Link to="About" spy={true} smooth={true} offset={-200} className="cursor-pointer text-lg font-medium text-gray-500 hover:text-indigo-500 no-underline">
+                    About us
+                </Link>
+                </Links>
+                </LinkItem>
+                <LinkItem><Links><Link to="Services" spy={true} smooth={true} offset={-200} className="cursor-pointer text-lg font-medium text-gray-500 hover:text-indigo-500 no-underline">
+                    Services
+                </Link></Links></LinkItem>
+                <LinkItem><Links><Link to="Gallery" spy={true} smooth={true} offset={-200} className="cursor-pointer text-lg font-medium text-gray-500 hover:text-indigo-500 no-underline">
+                    Gallery
+                </Link></Links></LinkItem>
+                <LinkItem><Links><Link to="Contact" spy={true} smooth={true} offset={-200} className="cursor-pointer text-lg font-medium text-gray-500 hover:text-indigo-500 no-underline">
+                    Contact us
+                </Link></Links></LinkItem>
             </LinksWrapper>
         </NavLinksContainer>
     )
