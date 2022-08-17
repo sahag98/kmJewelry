@@ -178,7 +178,6 @@ const Contact = () => {
                           Your email has been sent!
                         </Alert>
                       </Snackbar>
-
                     </Stack>
                   </div>
                 </form>

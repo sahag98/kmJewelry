@@ -10,11 +10,11 @@ const Gallery = () => {
     justify-content: center;
     
     @media (max-width: 767px) {
-        height:190vh;
+        /* height:190vh; */
         margin:0;
       }
       @media (width: 280px) {
-        height:430vh;
+        /* height:430vh; */
         margin:0;
       }
   `;
