@@ -37,7 +37,7 @@ const Contact = () => {
 
 
 
-  if (name.includes(char) || name.includes(char2) ||  email.includes(char) || email.includes(char2) || phone.includes(char) || phone.includes(char2) || message.includes(char)|| message.includes(char2)) {
+  if (name.includes(char) || name.includes(char2) || email.includes(char) || email.includes(char2) || phone.includes(char) || phone.includes(char2) || message.includes(char) || message.includes(char2)) {
     window.location.reload()
   }
 
@@ -49,7 +49,7 @@ const Contact = () => {
     setPhone('');
     setMessage('');
 
-    
+
 
     if (!name.includes(char) && !email.includes(char) && !phone.includes(char) && !message.includes(char)) {
 
@@ -107,7 +107,7 @@ const Contact = () => {
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-6">
-                    <input onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Your Full Name" className="
+                    <input pattern='[A-Za-z\s]+' onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Your Full Name" className="
                             w-full
                             rounded
                             py-3
@@ -130,10 +130,16 @@ const Contact = () => {
                             outline-none
                             focus-visible:shadow-none
                             focus:border-primary
-                            " required name='user_email' />
+                            "
+                      required
+                      name='user_email'
+                      pattern='[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}'
+                      title="Must be a valid email address"
+
+                    />
                   </div>
                   <div className="mb-6">
-                    <input onChange={e => setPhone(e.target.value)} value={phone} type="text" placeholder="Your Phone Number" className="
+                    <input pattern='[0-9-]+' onChange={e => setPhone(e.target.value)} value={phone} type="text" placeholder="Your Phone Number" className="
                             w-full
                             rounded
                             py-3
@@ -143,7 +149,7 @@ const Contact = () => {
                             outline-none
                             focus-visible:shadow-none
                             focus:border-primary
-                            " required name='user_phone' />
+                            " required name='user_phone' title="Enter phone number in this format: 888-888-8888" />
                   </div>
                   <div className="mb-6">
                     <textarea onChange={e => setMessage(e.target.value)} value={message} rows={6} placeholder="Your Message" className="
