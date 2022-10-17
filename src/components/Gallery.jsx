@@ -21,7 +21,7 @@ const Gallery = () => {
     const Image = styled.img`
     height: 350px;
     width:  350px;
-    border-radius: 8%;
+    border-radius: 5px;
     margin:20px;
      //padding:15px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -32,14 +32,14 @@ const Gallery = () => {
     width:  180px;
     padding:15px;
     box-shadow: none;
-    border-radius: 15%;
+    border-radius: 5px;
       }
       @media (width: 280px) {
         margin:0;
         height: 200px;
         width:  200px;
         padding:5px;
-        border-radius: 15%;
+        border-radius: 5px;
         margin-bottom: 10px;
       }
   `;
