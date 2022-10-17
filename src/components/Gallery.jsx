@@ -57,7 +57,7 @@ const Gallery = () => {
             id: 2,
             img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project.png?v=1653711696160",
 
-        }, 
+        },
         {
             id: 3,
             img: "https://cdn.glitch.global/5288658f-8afb-4ac7-b1fa-300b8de8635f/My%20project%20(9).png?v=1653712438473",
@@ -117,7 +117,7 @@ const Gallery = () => {
 
     ]
     return (<>
-        
+
         <H2 className="text-4xl text-indigo-600 font-semibold tracking-wide uppercase ">GALLERY</H2>
         <Container >
             {images.map((img) => (
