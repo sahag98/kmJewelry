@@ -16,7 +16,7 @@ const features = [
   {
     name: 'Maintenance',
     description:
-      'Restore any kind of defects on jewelry and perform the appropiate fixes.',
+      'Restore any kind of defects on jewelry and perform the appropriate fixes.',
     icon: ConstructionOutlinedIcon,
   },
   {
