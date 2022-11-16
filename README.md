@@ -18,9 +18,6 @@ Frameworks and technologies used<img src="https://media.giphy.com/media/WUlplcMp
 
 - bootstrap react
 
-TO TEST LOCALLY:
 
--Clone github repository
 
--Open visual code or a terminal and do <b>npm install</b> and <b>npm start</b>.
-
+![screencapture-kmjewelry-net-2022-10-28-11_08_59 (1)](https://user-images.githubusercontent.com/89553922/202276711-b5fa8749-7c05-44cb-b492-992d7453683a.png)
